@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+####### YOUR OWN FILE THAT WANT TO BE IGNORED
