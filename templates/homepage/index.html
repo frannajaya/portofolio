@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,18 +16,18 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href='{% static "images/favicon.ico" %}' type="image/x-icon" />
+    <link rel="apple-touch-icon" href='{% static "images/apple-touch-icon.png" %}'>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}'>
     <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href='{% static "css/responsive.css" %}'>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" href='{% static "css/custom.css" %}'>
+	<script src='{% static "js/modernizr.js" %}'></script> <!-- Modernizr -->
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -48,7 +49,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="images/logo.png" alt="" />
+			<img class="img-fluid" src='{% static "images/logo.png" %}' alt="" />
 		</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -85,7 +86,7 @@
       </div>
     </nav>
 	
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
+	<section id="home" class="main-banner parallaxie" style="background: url( '{% static 'uploads/banner-01.jpg' %}')">
 		<div class="heading">
 			<h1>Welcome to OnNext</h1>			
 			<h3 class="cd-headline clip is-full-width">
@@ -119,7 +120,7 @@
 
                 <div class="col-md-6">
                     <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
+                        <img src='{% static "uploads/about_04.jpg" %}' alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -213,54 +214,54 @@
 			<div class="gallery-list row">
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
+						<img src='{% static "uploads/gallery_img-01.jpg" %}' class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href='{% static "uploads/gallery_img-01.jpg" %}' data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
+						<img src='{% static "uploads/gallery_img-02.jpg" %}' class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href='{% static "uploads/gallery_img-02.jpg" %}' data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
+						<img src='{% static "uploads/gallery_img-03.jpg" %}' class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href='{% static "uploads/gallery_img-03.jpg" %}' data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
+						<img src='{% static "uploads/gallery_img-04.jpg" %}' class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href='{% static "uploads/gallery_img-04.jpg" %}' data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
+						<img src='{% static "uploads/gallery_img-05.jpg" %}' class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href='{% static "uploads/gallery_img-05.jpg" %}' data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
+						<img src='{% static "uploads/gallery_img-06.jpg" %}' class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href='{% static "uploads/gallery_img-06.jpg" %}' data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
@@ -281,7 +282,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-01.jpg" class="img-fluid" alt="post-img" />
+							<img src='{% static "uploads/blog-01.jpg" %}' class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -301,7 +302,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
+							<img src='{% static "uploads/blog-02.jpg" %}' class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -321,7 +322,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
+							<img src='{% static "uploads/blog-03.jpg" %}' class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -354,7 +355,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
-							<img src="uploads/img-2.jpg">
+							<img src='{% static "uploads/img-2.jpg" %}'>
 						</div>
 						<div class="team-content">
 							<h3 class="title">Kristiana</h3>
@@ -372,7 +373,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
-							<img src="uploads/img-4.jpg">
+							<img src='{% static "uploads/img-4.jpg" %}'>
 						</div>
 						<div class="team-content">
 							<h3 class="title">Miranda joy</h3>
@@ -390,7 +391,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
-							<img src="uploads/img-1.jpg">
+							<img src='{% static "uploads/img-1.jpg" %}'>
 						</div>
 						<div class="team-content">
 							<h3 class="title">Williamson</h3>
@@ -408,7 +409,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="our-team">
 						<div class="pic">
-							<img src="uploads/img-3.jpg">
+							<img src='{% static "uploads/img-3.jpg" %}'>
 						</div>
 						<div class="team-content">
 							<h3 class="title">Steve Thomas</h3>
@@ -568,7 +569,7 @@
     <div class="copyrights">
         <div class="container">
             <div class="footer-distributed">
-				<a href="#"><img src="images/logo.png" alt="" /></a>
+				<a href="#"><img src='{% static "images/logo.png" %}' alt="" /></a>
                 <div class="footer-center">
                     <p class="footer-links">
                         <a href="#">Home</a>
@@ -579,7 +580,7 @@
                         <a href="#">Contact</a>
                     </p>
                     <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">OnNext</a> Design By : 
-					<a href="https://html.design/">html design</a></p>
+					<a href='{% static "https://html.design/" %}'>html design</a></p>
                 </div>
             </div>
         </div><!-- end container -->
@@ -588,18 +589,18 @@
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
+    <script src='{% static "js/all.js" %}'></script>
 	<!-- Camera Slider -->
-	<script src="js/jquery.mobile.customized.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script> 
-	<script src="js/parallaxie.js"></script>
-	<script src="js/headline.js"></script>
+	<script src='{% static "js/jquery.mobile.customized.min.js" %}'></script>
+	<script src='{% static "js/jquery.easing.1.3.js" %}'></script> 
+	<script src='{% static "js/parallaxie.js" %}'></script>
+	<script src='{% static "js/headline.js" %}'></script>
 	<!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src='{% static "js/jqBootstrapValidation.js" %}'></script>
+    <script src='{% static "js/contact_me.js" %}'></script>
     <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
+    <script src='{% static "js/custom.js" %}'></script>
+    <script src='{% static "js/jquery.vide.js" %}'></script>
 
 </body>
 </html>
