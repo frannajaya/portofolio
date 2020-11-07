@@ -756,7 +756,8 @@ xclip
 	overflow: hidden;
 }
 .get_btn:hover{
-	color: #ffffff;
+    color: #ffffff;
+    background: #2098D1;
 }
 
 .learn_btn{
@@ -767,7 +768,8 @@ xclip
 	overflow: hidden;
 }
 .learn_btn:hover{
-	color: #ffffff;
+    color: #333333;
+    background: #2098D1;
 }
 
 .sim-btn{
@@ -2615,4 +2617,12 @@ select.mobile-device {
 .btn-light:focus {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
