@@ -26,7 +26,7 @@ SECRET_KEY = 'nes#c-69@=x0!a7($c4()iu0cw97af641n6a@d+hhzfi&*9d*i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
