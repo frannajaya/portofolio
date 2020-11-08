@@ -5,25 +5,10 @@ on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 4
-      matrix:
-        ruby: [ '2.5' ]
-    name: Ruby ${{ matrix.ruby }} for heroku deployment
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-ruby@v1
+      - uses: akhileshns/heroku-deploy@v3.6.8
         with:
-          ruby-version: ${{ matrix.ruby }}
-      - name: set up envirornment
-        run: |
-          gem install dpl
-          wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
-      - name: deploy to heroku
-        env:
-          HEROKU_APPNAME: ${{ secrets.HEROKU_APPNAME }}
-          HEROKU_APIKEY: ${{ secrets.HEROKU_APIKEY }}
-        run: |
-          dpl --provider=heroku --app=$HEROKU_APPNAME --api-key=$HEROKU_APIKEY
-          export HEROKU_API_KEY=$HEROKU_APIKEY
-          heroku run --app $HEROKU_APPNAME migrate
+          heroku_api_key: ${{ secrets.HEROKU_APIKEY }}
+          heroku_app_name: ${{ secrets.HEROKU_APPNAME }}
+          heroku_email: "franna.jaya@gmail.com"
