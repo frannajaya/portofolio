@@ -8,7 +8,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        ruby: [ '2.5', '2.6' ]
+        ruby: [ '2.5' ]
     name: Ruby ${{ matrix.ruby }} for heroku deployment
     steps:
       - uses: actions/checkout@v2
