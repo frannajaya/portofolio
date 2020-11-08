@@ -22,5 +22,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        - coverage run --include='homepage*/*' manage.py test
-        - coverage report -m
+        coverage run --include='homepage*/*' manage.py test
+        coverage report -m
