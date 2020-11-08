@@ -1,4 +1,4 @@
-Name: DEPLOYMENT CLI
+name: DEPLOYMENT CLI
 
 on: push
 

@@ -1,4 +1,4 @@
-Name: DJANGO CLI
+name: DJANGO CLI
 
 on: push
 
