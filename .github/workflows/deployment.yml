@@ -1,4 +1,4 @@
-Name: DEPLOYMENT CLI
+name: DEPLOYMENT CLI
 
 on: push
 
@@ -23,7 +23,6 @@ jobs:
         env:
           HEROKU_APPNAME: ${{ secrets.HEROKU_APPNAME }}
           HEROKU_APIKEY: ${{ secrets.HEROKU_APIKEY }}
-          HEROKU_APPNAME: ${{ secrets.HEROKU_APPNAME }}
         run: |
           dpl --provider=heroku --app=$HEROKU_APPNAME --api-key=$HEROKU_APIKEY
           export HEROKU_API_KEY=$HEROKU_APIKEY
